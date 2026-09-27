@@ -436,7 +436,35 @@ body {
     opacity: 0.7;
 }
 
+/* Scroll Indicator */
+.scroll-indicator {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+}
 
+.scroll-arrow {
+    width: 16px;
+    height: 16px;
+    border-bottom: 2px solid var(--red-dark);
+    border-right: 2px solid var(--red-dark);
+    transform: rotate(45deg);
+    animation: scrollBounce 2s infinite ease-in-out;
+}
+
+@keyframes scrollBounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0) rotate(45deg);
+    }
+    40% {
+        transform: translateY(-10px) rotate(45deg);
+    }
+    60% {
+        transform: translateY(-5px) rotate(45deg);
+    }
+}
 
 
 /* ═══════════════════════════════════════════════════
@@ -510,6 +538,15 @@ body {
     overflow: hidden;
     border: 2px solid rgba(196, 146, 42, 0.2);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.section-couple .couple-frame {
+    width: calc(100vw - 24px);
+    max-width: calc(100vw - 24px);
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    border: 2px solid rgba(196, 146, 42, 0.25);
 }
 
 .couple-img {
