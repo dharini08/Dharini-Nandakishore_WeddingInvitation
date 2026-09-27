@@ -450,6 +450,24 @@ body {
 
 .couple-header { margin-bottom: 24px; }
 
+.couple-tagline-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.elephant-side {
+    width: 60px;
+    height: auto;
+    filter: drop-shadow(0 4px 10px rgba(196, 146, 42, 0.25));
+}
+
+.elephant-right {
+    transform: scaleX(-1); /* Flip the right elephant to face inwards */
+}
+
 .couple-tagline {
     font-family: var(--font-sans);
     font-size: 0.65rem;
@@ -457,7 +475,7 @@ body {
     letter-spacing: 5px;
     text-transform: uppercase;
     color: var(--text-subtle);
-    margin-bottom: 10px;
+    margin-bottom: 0;
 }
 
 .couple-names-display {
