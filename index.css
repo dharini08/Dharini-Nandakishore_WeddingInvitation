@@ -442,14 +442,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0.8;
+    opacity: 1;
 }
 
 .scroll-arrow {
-    width: 16px;
-    height: 16px;
-    border-bottom: 2px solid var(--red-dark);
-    border-right: 2px solid var(--red-dark);
+    width: 28px;
+    height: 28px;
+    border-bottom: 4px solid var(--red-dark);
+    border-right: 4px solid var(--red-dark);
+    border-radius: 3px;
     transform: rotate(45deg);
     animation: scrollBounce 2s infinite ease-in-out;
 }
