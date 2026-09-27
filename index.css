@@ -488,8 +488,8 @@ body {
 }
 
 .couple-n {
-    font-family: var(--font-script);
-    font-size: 2.6rem;
+    font-family: 'Kavivanar', cursive;
+    font-size: 2.0rem;
     color: var(--red-dark);
 }
 
