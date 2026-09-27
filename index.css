@@ -462,10 +462,11 @@ body {
     width: 60px;
     height: auto;
     filter: drop-shadow(0 4px 10px rgba(196, 146, 42, 0.25));
+    mix-blend-mode: multiply;
 }
 
-.elephant-right {
-    transform: scaleX(-1); /* Flip the right elephant to face inwards */
+.elephant-left {
+    transform: scaleX(-1); /* Flip the left elephant to face inwards */
 }
 
 .couple-tagline {
