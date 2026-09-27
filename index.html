@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="theme-color" content="#1A0A02">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <title>Dharini & Nandakishore — Wedding Invitation</title>
+    <meta name="description" content="You are cordially invited to the auspicious wedding of Selvi Dharini T and Selvan Nandakishore S.V on Wednesday, 11th November 2026.">
+    <meta property="og:title" content="Dharini & Nandakishore — Wedding Invitation">
+    <meta property="og:description" content="Join us for the wedding celebration of Dharini & Nandakishore on 11th November 2026.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Great+Vibes&family=Caveat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Audio -->
+    <audio id="bg-music" loop preload="auto">
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Music button -->
+    <button class="music-btn" id="music-btn" aria-label="Toggle music" title="Maangalyam – Alaipayuthey">
+        <span class="music-icon" id="music-icon">🔇</span>
+        <span class="music-ring"></span>
+    </button>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!--  TEMPLE DOORS (kept dark)                  -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="door-screen" class="door-screen">
+        <div class="door-glow"></div>
+        <div class="particles" id="particles"></div>
+        <div class="door door-left"></div>
+        <div class="door door-right"></div>
+        <div class="door-seam"></div>
+        <div class="door-cta" id="door-cta">
+            <div class="cta-ring"></div>
+            <span class="cta-icon">🙏</span>
+            <p class="cta-text">Tap to Open</p>
+        </div>
+        <button class="door-click-zone" id="door-click-zone" aria-label="Open the temple doors"></button>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!--  SECTION 1 — HERO INVITATION               -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="section-hero" class="section section-hero">
+        <div class="section-inner">
+            <div class="ganesh-block animate-on-reveal" data-delay="100">
+                <img src="ganesh.png" alt="Sri Ganeshaya Namaha" class="ganesh-img">
+                <p class="ganesh-label">Sri Ganeshaya Namaha</p>
+            </div>
+
+            <div class="thunai-row animate-on-reveal" data-delay="150">
+                <span class="thunai-text">Sri Thirupathi Venkatajalapathi Thunai</span>
+                <span class="thunai-dot">•</span>
+                <span class="thunai-text">Sri Kunnatur Ayannar Thunai</span>
+            </div>
+
+            <div class="divider animate-on-reveal" data-delay="200"></div>
+
+            <h2 class="section-title animate-on-reveal" data-delay="250">Wedding Invitation</h2>
+
+            <div class="divider animate-on-reveal" data-delay="300"></div>
+
+            <!-- Bride's family -->
+            <div class="family-block animate-on-reveal" data-delay="350">
+                <p class="family-parents">Mr. M. Thirupathi Selvam &amp; Mrs. T. Samundeswari</p>
+                <p class="family-address">Kallangattu Thoppu, Othakkalmandapam, Coimbatore</p>
+                <p class="family-request">Request the pleasure of your company with family and friends<br>on the auspicious occasion of the marriage of their daughter</p>
+            </div>
+
+            <div class="person-block animate-on-reveal" data-delay="450">
+                <h1 class="person-name">Dharini. T, M.Sc.</h1>
+                <p class="person-profession">(Software Engineer – Game, United Kingdom)</p>
+                <p class="person-grandparents">Granddaughter of Late Mr. Manickam &amp; Mrs. Mariyammal and<br>Late Mr. Muthusamy &amp; Mrs. Manonmani</p>
+            </div>
+
+            <div class="with-block animate-on-reveal" data-delay="550">
+                <span class="with-text">with</span>
+            </div>
+
+            <!-- Groom's family -->
+            <div class="family-block animate-on-reveal" data-delay="650">
+                <p class="family-intro">Son of</p>
+                <p class="family-parents">Mr. S.R. Venkataramana Rao &amp; Mrs. S.R. Lalitha</p>
+                <p class="family-address">Sri Adhokshoja Nilaya, Agara, Bangalore</p>
+            </div>
+
+            <div class="person-block animate-on-reveal" data-delay="750">
+                <h1 class="person-name">Nandakishore. S.V, B.Com.</h1>
+                <p class="person-profession">(Senior Level Artist – Game, United Arab Emirates)</p>
+                <p class="person-grandparents">Grandson of Late Mr. Ramachandra Rao &amp; Mrs. Savithrama</p>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!--  SECTION 2 — COUPLE                        -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="section-couple" class="section section-couple">
+        <div class="section-inner">
+            <div class="couple-header animate-on-reveal" data-delay="0">
+                <p class="couple-tagline">Together in Love</p>
+                <div class="couple-names-display">
+                    <span class="couple-n">Dharini</span>
+                    <span class="couple-amp">&amp;</span>
+                    <span class="couple-n">Nandakishore</span>
+                </div>
+            </div>
+
+            <div class="couple-frame animate-on-reveal" data-delay="200">
+                <img src="couple.png" alt="Dharini and Nandakishore" class="couple-img" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!--  EVENTS TIMELINE                           -->
+    <!-- ═══════════════════════════════════════════ -->
+
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!--  SECTION 4 — EVENTS TIMELINE               -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="section-events" class="section section-events">
+        <div class="section-inner">
+            <h2 class="section-title animate-on-reveal" data-delay="0">Wedding Celebrations</h2>
+            <div class="divider animate-on-reveal" data-delay="50"></div>
+
+            <div class="timeline">
+                <!-- Event 1 -->
+                <div class="timeline-event animate-on-reveal" data-delay="100">
+                    <div class="timeline-dot"><span>1</span></div>
+                    <div class="timeline-card">
+                        <div class="event-badge">Ceremony</div>
+                        <h3 class="event-name">Muhurthakal</h3>
+                        <div class="event-meta">
+                            <div class="event-meta-row"><span class="meta-icon">📅</span><span>Monday, 9th November 2026</span></div>
+                            <div class="event-meta-row"><span class="meta-icon">🕘</span><span>9:00 AM</span></div>
+                            <div class="event-meta-row"><span class="meta-icon">📍</span><span>Bride's Home</span></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Event 2 -->
+                <div class="timeline-event animate-on-reveal" data-delay="200">
+                    <div class="timeline-dot"><span>2</span></div>
+                    <div class="timeline-card">
+                        <div class="event-badge mehendi-badge">Mehendi</div>
+                        <h3 class="event-name">Mehendi Ceremony</h3>
+                        <div class="event-meta">
+                            <div class="event-meta-row"><span class="meta-icon">📅</span><span>Monday, 9th November 2026</span></div>
+                            <div class="event-meta-row"><span class="meta-icon">🕟</span><span>4:30 PM</span></div>
+                            <div class="event-meta-row"><span class="meta-icon">📍</span><span>Bride's Home</span></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Event 3 -->
+                <div class="timeline-event animate-on-reveal" data-delay="300">
+                    <div class="timeline-dot wedding-dot"><span>3</span></div>
+                    <div class="timeline-card wedding-card">
+                        <div class="event-badge wedding-badge">Main Event</div>
+                        <h3 class="event-name wedding-name">💍 Wedding Ceremony</h3>
+                        <div class="event-meta">
+                            <div class="event-meta-row"><span class="meta-icon">📅</span><span>Wednesday, 11th November 2026</span></div>
+                            <div class="event-meta-row"><span class="meta-icon">📆</span><span class="tamil-date">Aippasi 25</span></div>
+                            <div class="event-meta-row"><span class="meta-icon">🕓</span><span><strong>Muhurtham: 4:00 AM – 5:00 AM</strong></span></div>
+                            <div class="event-meta-row"><span class="meta-icon">📍</span><span>Arulmigu Kunnathur Ayyanar Thirukoil</span></div>
+                            <div class="event-meta-row venue-sub"><span class="meta-icon"></span><span>Uthukuli Taluk, Tiruppur District</span></div>
+                        </div>
+                        <a href="https://maps.app.goo.gl/arN1nK15Ab7N4Am26" target="_blank" rel="noopener noreferrer" class="event-map-btn">📍 Google Maps</a>
+                    </div>
+                </div>
+                <!-- Event 4 -->
+                <div class="timeline-event animate-on-reveal" data-delay="400">
+                    <div class="timeline-dot"><span>4</span></div>
+                    <div class="timeline-card">
+                        <div class="event-badge reception-badge">Reception</div>
+                        <h3 class="event-name">🎉 Wedding Reception</h3>
+                        <p class="event-location-label">Coimbatore</p>
+                        <div class="event-meta">
+                            <div class="event-meta-row"><span class="meta-icon">📅</span><span>Thursday, 12th November 2026</span></div>
+                            <div class="event-meta-row"><span class="meta-icon">🕕</span><span>6:00 PM – 9:00 PM</span></div>
+                            <div class="event-meta-row"><span class="meta-icon">📍</span><span>G S Mahal</span></div>
+                            <div class="event-meta-row venue-sub"><span class="meta-icon"></span><span>Pollachi Main Road, Premier Nagar,<br>Coimbatore – 641032</span></div>
+                        </div>
+                        <a href="https://maps.app.goo.gl/arN1nK15Ab7N4Am26" target="_blank" rel="noopener noreferrer" class="event-map-btn">📍 Google Maps</a>
+                    </div>
+                </div>
+                <!-- Event 5 -->
+                <div class="timeline-event animate-on-reveal" data-delay="500">
+                    <div class="timeline-dot"><span>5</span></div>
+                    <div class="timeline-card">
+                        <div class="event-badge reception-badge">Reception</div>
+                        <h3 class="event-name">🎉 Wedding Reception</h3>
+                        <p class="event-location-label">Bangalore</p>
+                        <div class="event-meta">
+                            <div class="event-meta-row"><span class="meta-icon">📅</span><span>Sunday, 16th November 2026</span></div>
+                            <div class="event-meta-row"><span class="meta-icon">📍</span><span>Bangalore</span></div>
+                        </div>
+                        <a href="https://maps.app.goo.gl/qjvYXZ4ymE6uBvdX9" target="_blank" rel="noopener noreferrer" class="event-map-btn">📍 Google Maps</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!--  SECTION 5 — COUNTDOWN                     -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="section-countdown" class="section section-countdown">
+        <div class="section-inner">
+            <p class="countdown-label animate-on-reveal" data-delay="0">Counting down to our special day</p>
+            <div class="countdown-timer animate-on-reveal" data-delay="100" id="countdown-timer">
+                <div class="countdown-unit"><span class="countdown-number" id="cd-days">--</span><span class="countdown-text">Days</span></div>
+                <div class="countdown-sep">:</div>
+                <div class="countdown-unit"><span class="countdown-number" id="cd-hours">--</span><span class="countdown-text">Hours</span></div>
+                <div class="countdown-sep">:</div>
+                <div class="countdown-unit"><span class="countdown-number" id="cd-mins">--</span><span class="countdown-text">Mins</span></div>
+                <div class="countdown-sep">:</div>
+                <div class="countdown-unit"><span class="countdown-number" id="cd-secs">--</span><span class="countdown-text">Secs</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!--  SECTION 6 — FOOTER                        -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="section-footer" class="section section-footer">
+        <div class="section-inner">
+            <p class="blessing-text animate-on-reveal" data-delay="100">Solicit your gracious presence with family and friends<br>on the auspicious occasion of our marriage</p>
+
+            <div class="divider animate-on-reveal" data-delay="200"></div>
+
+            <p class="footer-names animate-on-reveal" data-delay="300">With love,<br><span class="footer-couple">Dharini &amp; Nandakishore</span></p>
+            <div class="footer-hearts animate-on-reveal" data-delay="400">🌸 🪔 🌸</div>
+            <div class="calendar-block animate-on-reveal" data-delay="500"><a href="#" id="add-to-calendar" class="calendar-btn">📅 Add to Calendar</a></div>
+            <p class="footer-credit animate-on-reveal" data-delay="600">#DhariniWedsNandakishore</p>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
