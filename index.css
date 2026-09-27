@@ -489,13 +489,13 @@ body {
 
 .couple-n {
     font-family: 'Kavivanar', cursive;
-    font-size: 2.0rem;
+    font-size: 1.4rem;
     color: var(--red-dark);
 }
 
 .couple-amp {
     font-family: var(--font-script);
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     color: var(--gold);
     opacity: 0.6;
 }
