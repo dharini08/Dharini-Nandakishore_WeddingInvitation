@@ -143,7 +143,7 @@ body {
     top: 0;
     width: 50%;
     height: 100%;
-    background-image: url('preview.webp');
+    background-image: url('images/preview.webp');
     background-size: cover;
     background-repeat: no-repeat;
     will-change: transform;
