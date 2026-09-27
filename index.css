@@ -541,12 +541,12 @@ body {
 }
 
 .section-couple .couple-frame {
-    width: calc(100vw - 24px);
-    max-width: calc(100vw - 24px);
-    margin-left: 50%;
-    transform: translateX(-50%);
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto 24px auto;
     border-radius: 10px;
     border: 2px solid rgba(196, 146, 42, 0.25);
+    transform: none;
 }
 
 .couple-img {
