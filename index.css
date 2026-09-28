@@ -119,11 +119,18 @@ body {
     align-items: center;
     background: var(--temple-bg);
     overflow: hidden;
-    perspective: 1800px;
     transition: opacity 0.6s ease 1.0s, visibility 0s linear 1.8s;
 }
 
 .door-screen.opened { opacity: 0; visibility: hidden; pointer-events: none; }
+
+.door-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 560px;
+    height: 100%;
+    perspective: 1800px;
+}
 
 .door-glow {
     position: absolute;
