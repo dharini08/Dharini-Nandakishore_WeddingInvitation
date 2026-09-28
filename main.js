@@ -16,6 +16,7 @@
     const cdMins        = document.getElementById('cd-mins');
     const cdSecs        = document.getElementById('cd-secs');
     const calBtn        = document.getElementById('add-to-calendar');
+    const scrollIndicator = document.getElementById('scroll-indicator');
 
     let doorsOpened = false;
     let musicPlaying = false;
@@ -82,6 +83,7 @@
             doorScreen.style.display = 'none';
             document.body.style.overflow = 'auto';
             setupScrollReveals();
+            setupScrollIndicator();
         }, 2200);
     }
 
@@ -99,6 +101,36 @@
         }, { threshold: 0.1, rootMargin: '0px 0px -20px 0px' });
 
         elements.forEach((el) => observer.observe(el));
+    }
+
+    // ── Floating Scroll Indicator ──
+    function setupScrollIndicator() {
+        if (!scrollIndicator) return;
+
+        // Show the arrow
+        scrollIndicator.classList.add('visible');
+
+        // Click to scroll down one viewport height
+        scrollIndicator.addEventListener('click', () => {
+            window.scrollBy({ top: window.innerHeight, behavior: 'smooth' });
+        });
+
+        // Hide when near the bottom of the page
+        function checkScrollPosition() {
+            const scrollTop = window.scrollY || document.documentElement.scrollTop;
+            const windowHeight = window.innerHeight;
+            const docHeight = document.documentElement.scrollHeight;
+            const distanceFromBottom = docHeight - scrollTop - windowHeight;
+
+            if (distanceFromBottom < 100) {
+                scrollIndicator.classList.add('hidden');
+            } else {
+                scrollIndicator.classList.remove('hidden');
+            }
+        }
+
+        window.addEventListener('scroll', checkScrollPosition, { passive: true });
+        checkScrollPosition();
     }
 
     // ── Countdown ──
